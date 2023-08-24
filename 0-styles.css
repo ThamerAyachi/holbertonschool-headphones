@@ -1,3 +1,5 @@
+/* Global */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,23 @@
     list-style-type: none;
     text-decoration: none;
     color: inherit;
+}
+
+.btn {
+    background: #ff6565;
+    color: white;
+    padding: 13px 31px;
+    border-radius: 30px;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #a44040;
 }
 
 /* Section one */
@@ -142,5 +161,58 @@ main section:nth-child(1) header ul img {
 
     .header .menu-icon .navicon::after {
         top: -0.4rem;
+    }
+}
+
+.main-part {
+    height: 80%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    color: white;
+    padding: 0 370px;
+    text-align: center;
+}
+
+.main-part h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-part .first {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-part div {
+    display: flex;
+    justify-content: center;
+}
+
+.main-part button {
+    margin: 40px 0 60px 0;
+    width: 160px;
+    height: 44px;
+    font-size: 12px;
+}
+
+.paragraph {
+    font-size: 16px;
+    color: rgb(201, 201, 201);
+    width: 630px;
+    font-weight: normal;
+}
+
+@media (max-width: 767px) {
+    .main-part {
+        height: 80%;
+        padding: 0 66px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-part {
+        height: 80%;
+        padding: 0 9px;
     }
 }
